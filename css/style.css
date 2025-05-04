@@ -1,0 +1,210 @@
+/*  General Reset  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Scheme */
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+
+  /* Typography */
+  --font-base: "Outfit", sans-serif;
+  --font-heading: "Young Serif", serif;
+
+  --font-size-h1: 40px;
+  --font-size-h2: 28px;
+  --font-size-h3: 18px;
+  --font-size-base: 16px;
+
+  --weight400: 400;
+  --weight600: 600;
+  --weight700: 700;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/Outfit/Outfit-Regular.woff2) format("woff2"), url(../fonts/Outfit/Outfit-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/Outfit/Outfit-SemiBold.woff2) format("woff2"), url(../fonts/Outfit/Outfit-SemiBold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/Outfit/Outfit-Bold.woff2) format("woff2"), url(../fonts/Outfit/Outfit-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url(../fonts/Young_Serif/YoungSerif-Regular.woff2) format("woff2"), url(../fonts/Young_Serif/YoungSerif-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--Stone100);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  color: var(--Stone600);
+  font-weight: var(--weight400);
+  line-height: 150%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 720px;
+  margin: 100px auto;
+  background-color: var(--White);
+  padding: 40px;
+  border-radius: 24px;
+  gap: 32px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h1);
+  font-weight: var(--weight400);
+  color: var(--Stone900);
+  line-height: 100%;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: var(--weight400);
+  color: var(--Brown800);
+  line-height: 100%;
+}
+
+h3 {
+  font-family: var(--font-base);
+  font-size: var(--font-size-h3);
+  font-weight: var(--weight600);
+  color: var(--Rose800);
+  line-height: 100%;
+}
+
+.strong {
+  font-weight: var(--weight700);
+}
+
+.brown800 {
+  color: var(--Brown800);
+}
+
+/* Sections */
+.hero-img {
+  border-radius: 12px;
+}
+
+.preparation {
+  background-color: var(--Rose50);
+  padding: 24px 36px;
+  border-radius: 12px;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Components */
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: var(--Stone150);
+}
+
+/* Utilities */
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+li {
+  --margin-li: 20px;
+  --margin-bottom: 12px;
+  list-style-position: outside;
+  margin-left: var(--margin-li);
+  margin-bottom: var(--margin-bottom);
+  padding-left: var(--margin-li);
+}
+
+ol li::marker {
+  color: var(--Brown800);
+  font-weight: var(--weight700);
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 32px;
+}
+
+table tr {
+  border-bottom: 1px solid var(--Stone150);
+  height: 40px;
+}
+
+table td {
+  padding-left: 24px;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  /* Remove padding from main to allow hero image to span full width */
+  main {
+    padding: 0;
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  body {
+    background-color: var(--White);
+  }
+
+  /* Apply padding to content only (excluding hero image) */
+  .wrapper {
+    padding: 24px;
+  }
+
+  .hero-img {
+    border-radius: 0;
+  }
+}
