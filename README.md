@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/stefanstraeter/QR-code-component.git)
-- Live Site URL: [Live Demo](https://stefanstraeter.github.io/QR-code-component/)
+- Solution URL: [GitHub Repository](https://github.com/stefanstraeter/recipe-page)
+- Live Site URL: [Live Demo](https://stefanstraeter.github.io/Recipe-page/)
 
 ## My process
 
@@ -25,7 +25,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - Responsive design principles
-- Fade-In on Page Load
 
 ### Key learnings
 
@@ -34,7 +33,7 @@ This project helped reinforce my understanding of:
 - Semantic HTML structure for accessibility
 - CSS variables for consistent styling
 - Responsive design techniques
-- Typography implementation with variable fonts
+- Typography implementation using locally hosted variable fonts
 
 ## Author
 
