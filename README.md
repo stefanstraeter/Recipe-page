@@ -16,6 +16,10 @@ Users should be able to:
 - Solution URL: [GitHub Repository](https://github.com/stefanstraeter/recipe-page)
 - Live Site URL: [Live Demo](https://stefanstraeter.github.io/Recipe-page/)
 
+### Screenshot
+<img width="1418" height="981" alt="Recipe Page" src="https://github.com/user-attachments/assets/50eebd91-6c36-4dff-9e36-3d234f564a7c" />
+
+
 ## My process
 
 ### Built with
